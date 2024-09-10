@@ -9,7 +9,8 @@
 
 3.
 
-`public void Faturamento(double[] faturamento){
+`
+public void Faturamento(double[] faturamento){
         double min = double.MaxValue;
         double max = double.MinValue;
         double soma = 0;
@@ -38,15 +39,18 @@
         Console.WriteLine($"Maior faturamento: {max}");
         Console.WriteLine($"Dias com faturamento acima da média: {diasAcimaDaMedia}");
 
-}`
+}
+`
 
 4. 	![diagrama](Diagrama.png)
 
-`SELECT c.ClienteID, c.RazaoSocial, t.Numero
+`
+SELECT c.ClienteID, c.RazaoSocial, t.Numero
 FROM Clientes c
 JOIN Estados e ON c.EstadoID = e.EstadoID
 LEFT JOIN Telefones t ON c.ClienteID = t.ClienteID
-WHERE e.Sigla = 'SP';`
+WHERE e.Sigla = 'SP';
+`
 
 5.
 - a Aproximadamente 0.735 horas
